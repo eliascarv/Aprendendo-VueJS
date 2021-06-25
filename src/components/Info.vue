@@ -2,7 +2,8 @@
   <div>
     <p v-if="esta_trab">Estou trabalhando como {{ profissao }}.</p>
     <p v-else>Estou a procura de uma oportunidade.</p>
-    <p v-show="mostrar_email">Meu email é: {{ email }}</p>
+    <p>Meu email é: <span v-show="mostrar_email">{{ email }}</span></p>
+    <button @click="showEmail">Mostar Email</button>
     <p>O link do meu perfil no github é o seguinte: <a v-bind:href="github">eliascarv</a></p>
     <imagem />
   </div>
@@ -27,6 +28,11 @@ export default {
       esta_trab: true,
       mostrar_email: true,
       github: 'https://github.com/eliascarv'
+    }
+  },
+  methods: {
+    showEmail() {
+      this.mostrar_email = !this.mostrar_email
     }
   }
 }
