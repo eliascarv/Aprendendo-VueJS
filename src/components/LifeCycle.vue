@@ -1,5 +1,5 @@
 <template>
-  <h1>Meu nome é: {{ nome }}</h1>
+  <h1>{{ nome }}</h1>
 </template>
 
 // Quando o componete <life-cicle /> é criado, seu valor é alterado.
@@ -16,7 +16,7 @@ export default {
     }
   },
   created() {
-    this.nome = 'Elias'
+    this.nome = 'Elias Carvalho'
   }
 }
 </script>
