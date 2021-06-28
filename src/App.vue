@@ -23,6 +23,11 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: Inter;
+  src: url("fonts/Inter-VariableFont.ttf");
+}
+
 * {
   font-family: Inter, sans-serif;
 }
