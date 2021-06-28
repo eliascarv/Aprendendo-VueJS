@@ -1,10 +1,5 @@
 <template>
-  <Info 
-    :email="email"
-    :profissao="profissao"
-    :usr_github="usr_github"
-    :link_github="link_github"
-  />
+  <Info :email="email" :profissao="profissao" :usr_github="usr_github" :link_github="link_github"/>
 </template>
 
 <script>

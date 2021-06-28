@@ -4,7 +4,7 @@
     <p v-else>Estou a procura de uma oportunidade.</p>
     <p>Meu email é: <span v-show="mostrar_email">{{ email }}</span></p>
     <Botao @click="showEmail">{{ texto_botao }}</Botao>
-    <p>O link do meu perfil no github é o seguinte: <a v-bind:href="link_github">{{ usr_github}}</a></p>
+    <p>O link do meu perfil no github é o seguinte: <a v-bind:href="link_github">{{ usr_github }}</a></p>
     <Imagem />
   </div>
 </template>
@@ -21,8 +21,13 @@ export default {
   name: 'Info',
   components: {
     Imagem,
-    Formulario,
     Botao
+  },
+  props: {
+    profissao: String,
+    email: String,
+    usr_github: String,
+    link_github: String
   },
   data() {
     return {
@@ -30,12 +35,6 @@ export default {
       mostrar_email: false,
       texto_botao: 'Mostar Email'
     }
-  },
-  props: {
-    profissao: String,
-    email: String,
-    usr_github: String,
-    link_github: String
   },
   methods: {
     showEmail() {
