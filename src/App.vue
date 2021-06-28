@@ -3,24 +3,27 @@
   <PrimeiroComp />
   <MultiplosEventos />
   <LifeCycle />
-  <Info />
+  <Pessoa />
+  <Formulario />
 </template>
 
 <script>
 import PrimeiroComp from './components/PrimeiroComp.vue'
 import LifeCycle from './components/LifeCycle.vue'
-import Info from './components/Info.vue'
+import Pessoa from './components/Pessoa.vue'
 import Header from './components/Header.vue'
 import MultiplosEventos from './components/MultiplosEventos.vue'
+import Formulario from './components/Formulario.vue'
 
 export default {
   name: 'App',
   components: {
     PrimeiroComp,
     LifeCycle,
-    Info,
+    Pessoa,
     Header,
-    MultiplosEventos
+    MultiplosEventos,
+    Formulario
   }
 }
 </script>

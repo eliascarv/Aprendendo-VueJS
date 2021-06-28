@@ -4,9 +4,8 @@
     <p v-else>Estou a procura de uma oportunidade.</p>
     <p>Meu email é: <span v-show="mostrar_email">{{ email }}</span></p>
     <Botao @click="showEmail">{{ texto_botao }}</Botao>
-    <p>O link do meu perfil no github é o seguinte: <a v-bind:href="github">eliascarv</a></p>
+    <p>O link do meu perfil no github é o seguinte: <a v-bind:href="link_github">{{ usr_github}}</a></p>
     <Imagem />
-    <Formulario />
   </div>
 </template>
 
@@ -16,7 +15,6 @@
 // Como forma abreviada também é possivel simplismente adicionar : antes do nome do atributo
 <script>
 import Imagem from './Imagem.vue'
-import Formulario from './Formulario.vue'
 import Botao from './Botao.vue'
 
 export default {
@@ -28,13 +26,16 @@ export default {
   },
   data() {
     return {
-      profissao: 'Programador',
-      email: 'eliascarv@email.com',
       esta_trab: true,
       mostrar_email: false,
-      texto_botao: 'Mostar Email',
-      github: 'https://github.com/eliascarv'
+      texto_botao: 'Mostar Email'
     }
+  },
+  props: {
+    profissao: String,
+    email: String,
+    usr_github: String,
+    link_github: String
   },
   methods: {
     showEmail() {
