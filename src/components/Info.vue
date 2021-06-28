@@ -5,7 +5,8 @@
     <p>Meu email é: <span v-show="mostrar_email">{{ email }}</span></p>
     <button @click="showEmail">{{ texto_botao }}</button>
     <p>O link do meu perfil no github é o seguinte: <a v-bind:href="github">eliascarv</a></p>
-    <imagem />
+    <Imagem />
+    <Formulario />
   </div>
 </template>
 
@@ -15,11 +16,13 @@
 // Como forma abreviada também é possivel simplismente adicionar : antes do nome do atributo
 <script>
 import Imagem from './Imagem.vue'
+import Formulario from './Formulario.vue'
 
 export default {
   name: 'Info',
   components: {
-    Imagem
+    Imagem,
+    Formulario
   },
   data() {
     return {
