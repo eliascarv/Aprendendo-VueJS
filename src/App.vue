@@ -25,7 +25,7 @@ export default {
 <style>
 @font-face {
   font-family: Inter;
-  src: url("fonts/Inter-VariableFont.ttf");
+  src: url('/fonts/Inter-VariableFont.ttf');
 }
 
 * {
