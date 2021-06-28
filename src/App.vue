@@ -1,6 +1,7 @@
 <template>
   <Header />
   <PrimeiroComp />
+  <MultiplosEventos />
   <LifeCycle />
   <Info />
 </template>
@@ -10,6 +11,7 @@ import PrimeiroComp from './components/PrimeiroComp.vue'
 import LifeCycle from './components/LifeCycle.vue'
 import Info from './components/Info.vue'
 import Header from './components/Header.vue'
+import MultiplosEventos from './components/MultiplosEventos.vue'
 
 export default {
   name: 'App',
@@ -17,7 +19,8 @@ export default {
     PrimeiroComp,
     LifeCycle,
     Info,
-    Header
+    Header,
+    MultiplosEventos
   }
 }
 </script>

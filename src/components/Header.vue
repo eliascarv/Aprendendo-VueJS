@@ -2,7 +2,7 @@
   <ul>
     <li><a href="#">Início</a></li>
     <li><a href="#">Contato</a></li>
-    <li><a href="#">Hitória</a></li>
+    <li><a href="#">História</a></li>
   </ul>
 </template>
 
@@ -27,6 +27,7 @@ export default {
     color: red;
     text-decoration: none;
     border: solid red 2px;
+    border-radius: 5px;
   }
 
   a:visited {
