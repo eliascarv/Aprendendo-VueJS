@@ -2,13 +2,18 @@
   <form @submit="enviarForm($event)">
     <input type="text" v-model="nome"><br>
     <input type="text" v-model="email"><br>
-    <button type="submit">Enviar</button>
+    <Botao type="submit">Enviar</Botao>
   </form>
 </template>
 
 <script>
+import Botao from './Botao.vue'
+
 export default {
   name: 'Formulario',
+  components: {
+    Botao
+  },
   data() {
     return {
       nome: '',
@@ -40,23 +45,5 @@ input {
   margin-bottom: 5px;
   border: solid rgba(0, 0, 0, 0.12) 2px;
   border-radius: 5px;
-}
-
-button {
-  border: solid rgba(0, 0, 0, 0.12) 2px;
-  background-color: white;
-  height: 36px;
-  min-width: 64px;
-  border-radius: 5px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-/* button:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-} */
-
-button:active {
-  background-color: rgba(0, 0, 0, 0.05);
 }
 </style>

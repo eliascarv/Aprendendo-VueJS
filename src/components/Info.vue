@@ -3,7 +3,7 @@
     <p v-if="esta_trab">Estou trabalhando como {{ profissao }}.</p>
     <p v-else>Estou a procura de uma oportunidade.</p>
     <p>Meu email é: <span v-show="mostrar_email">{{ email }}</span></p>
-    <button @click="showEmail">{{ texto_botao }}</button>
+    <Botao @click="showEmail">{{ texto_botao }}</Botao>
     <p>O link do meu perfil no github é o seguinte: <a v-bind:href="github">eliascarv</a></p>
     <Imagem />
     <Formulario />
@@ -17,12 +17,14 @@
 <script>
 import Imagem from './Imagem.vue'
 import Formulario from './Formulario.vue'
+import Botao from './Botao.vue'
 
 export default {
   name: 'Info',
   components: {
     Imagem,
-    Formulario
+    Formulario,
+    Botao
   },
   data() {
     return {
@@ -46,23 +48,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-button {
-  border: solid rgba(0, 0, 0, 0.12) 2px;
-  background-color: white;
-  height: 36px;
-  min-width: 64px;
-  border-radius: 5px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-/* button:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-} */
-
-button:active {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-</style>
