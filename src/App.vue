@@ -28,6 +28,9 @@ export default {
 }
 </script>
 
+// Qualquer CSS que não for scoped será global e valerá para todos os comps
+// Assim, é boa prática colocar esse tipo de CSS apenas nos comps principais
+
 <style>
 @font-face {
   font-family: Inter;

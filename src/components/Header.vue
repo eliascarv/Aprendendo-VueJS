@@ -12,6 +12,7 @@ export default {
 }
 </script>
 
+// Quando o CSS é definido como scoped, o mesmo só é aplicado ao comp ao qual pertece
 <style scoped>
   ul {
     list-style: none;

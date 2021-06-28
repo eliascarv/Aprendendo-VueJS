@@ -7,6 +7,9 @@
   </div>
 </template>
 
+// Támbém é possível passar várias funcões na execução do evento
+// As mesmas devem ser separas por vírgula
+
 <script>
 export default {
   name: 'MultiplosEventos',

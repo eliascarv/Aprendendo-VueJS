@@ -13,6 +13,18 @@
 // É possivel tornar qualquer atributo de uma tag html passivel de receber código vue ou js
 // Isso é possivel adicionando v-bind: antes do nome do atributo
 // Como forma abreviada também é possivel simplismente adicionar : antes do nome do atributo
+
+// Eventos(v-on): os eventos são ações do usuario que podem jerar novos comportamentos
+// Como acontece com o v-bind, @ é um alias para v-on
+
+// Métodos: eles ficam na propriedade methods
+// São funções que podem ser usadas para alterar as propriedades do comp
+// Geralmente são usadas em eventos como @click (on:click)
+
+// Props (propriedades): podem ser usadas da mesma forma que atributos html
+// As props podem ser usadas no template da desma forma que os atributos de data(), usando {{}}
+// Quando um novo comp é criado, pode-se passar valores para as props e os mesmos serão utilizados no comp
+// O componet Info é usado no cmponente Pessoa, lá é possivel ver o uso das props
 <script>
 import Imagem from './Imagem.vue'
 import Botao from './Botao.vue'

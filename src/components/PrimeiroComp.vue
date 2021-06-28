@@ -10,10 +10,11 @@
 // O name define o nome do componete, o padrão é usar o estilo camelo
 // Porém quando o componete é usado no html ele sofre algumas alterações
 // O padão camelo é alterado para o seguite padrão: PrimeiroComp = <primeiro-comp />
-// Porém o nome do componente támbém pode ser usadao <PrimeiroComp />
+// Porém o nome do componente támbém pode ser usadao: <PrimeiroComp />
+// Cabe ao programdor escolher qual estilo usar para os componentes
 // Outra propriedadde muito importante de um componte é o método data()
 // Nessa proprieadade você irá retornar um objeto que irá conter as poroprieades do componte
-// Essas propriedades podem ser acessadas no template do comp usando chaves duplas {{}}
+// Essas propriedades podem ser acessadas no template do comp usando chaves duplas {{ data }}
 <script>
 export default {
   name: "PrimeiroComp",
