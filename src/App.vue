@@ -1,6 +1,7 @@
 <template>
   <Header />
   <PrimeiroComp />
+  <Relogio />
   <MultiplosEventos />
   <LifeCycle />
   <Pessoa />
@@ -14,6 +15,7 @@ import Pessoa from './components/Pessoa.vue'
 import Header from './components/Header.vue'
 import MultiplosEventos from './components/MultiplosEventos.vue'
 import Formulario from './components/Formulario.vue'
+import Relogio from './components/Relogio.vue'
 
 export default {
   name: 'App',
@@ -23,7 +25,8 @@ export default {
     Pessoa,
     Header,
     MultiplosEventos,
-    Formulario
+    Formulario,
+    Relogio
   }
 }
 </script>

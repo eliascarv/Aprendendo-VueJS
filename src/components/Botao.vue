@@ -2,17 +2,17 @@
   <button v-bind="$attrs"><slot/></button>
 </template>
 
-// Quando queremos que o nosso comp receba atributos nativos do html e do vue usamos a variavel $attrs
-// Essa variavel especial é um array contendo os valores passados para os atributos
-// O atributo v-bind do Vue consegue distribuir os valores para os atributos corretos
+<!-- Quando queremos que o nosso comp receba atributos nativos do html e do Vue usamos a variavel $attrs -->
+<!-- Essa variavel especial é um array contendo os valores passados para os atributos -->
+<!-- O atributo v-bind do Vue consegue distribuir os valores para os atributos corretos -->
 
-// A tag <slot/> serve para que a valor passado entre as tags do comp seja enviado para onde essa tag está
+<!-- A tag <slot/> serve para que a valor passado entre as tags do comp seja enviado para onde essa tag está -->
 
-// Assim se um comp é construido da seguinte forma: <Botao type="text">Enviar<Botao/>
-// O btão dentro do tamplete recebe esses valores e seria equivalente ao seguinte código:
-// <button type="text">Enviar<button/>
+<!-- Assim se um comp é construido da seguinte forma: <Botao type="text">Enviar<Botao/> -->
+<!-- O btão dentro do tamplete recebe esses valores e seria equivalente ao seguinte código: -->
+<!-- <button type="text">Enviar<button/> -->
 
-// Para exemplos de uso do comp Botao veja Formulario e Info
+<!-- Para exemplos de uso do comp Botao veja Formulario e Info -->
 <script>
 export default {
   name: 'Botao'
